@@ -1,0 +1,95 @@
+header{
+    height: 100vh;
+    padding-top: 3rem;
+    overflow: hidden;
+}
+
+.header__container{
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+
+/*--====  CTA  ====--*/
+
+.cta{
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.3rem;
+}
+
+
+/*--====  Social Icons  ====--*/
+
+.header__socials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    left: 0;
+    bottom: 4rem;
+    position: absolute;
+}
+
+.header__socials::after{
+    content: "";
+    width: 1px;
+    height: 3rem;
+    background-color: var(--color-primary);
+}
+
+
+/*--====  Me  ====--*/
+
+.me{
+    background: linear-gradient(var(--color-primary), transparent);
+    width: 15rem;
+    height: 22rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 4rem;
+    border-radius: 12rem 12rem 0 0;
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+}
+
+.me img{
+    /* width: 200px; */
+    height: 300px;
+}
+
+/*--====  Scroll Down  ====--*/
+
+
+.scrol__down{
+    position: absolute;
+    right: -2.5rem;
+    bottom: 6rem;
+    transform: rotate(90deg);
+    font-weight: 200;
+    font-size: 0.8rem;
+
+}
+
+
+/*--==== Wazgar khalko Screen Use ====--*/
+
+
+@media screen and (max-width: 1024px) {
+   header{
+    height: 100vh;
+   }
+}
+
+@media screen and (max-width: 600px) {
+      header{
+        height: 100vh;
+        padding-top: 5rem;
+      }
+      .scrol__down,
+      .header__socials{
+        display: none;
+      }
+}   
